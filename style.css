@@ -13,12 +13,16 @@
 
 *, *::before, *::after {box-sizing: border-box;}
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: var(--font-text);
     padding: 0 1vw;
     display: grid;
-    grid-template-rows: min-content auto min-content;
+    grid-template-rows: min-content repeat(auto-fill, 1fr) min-content;
     min-height: 100vh;
     color: var(--color-text);
 }
@@ -28,33 +32,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    text-decoration: none;
+    color: var(--color-text);
     font-family: var(--font-paragraph);
 }
 
-p {
+p, li {
     font-family: var(--font-paragraph);
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
-.intro {
+.grid {
     display: grid;
     grid-template-columns: 2fr minmax(50ch, 75ch) 1fr;
     padding: 2rem 0;
 }
 
-.intro h1 {
+.grid h1 {
     font-family: var(--font-paragraph);
     font-size: 4rem;
 }
 
-.intro > div {
+h2 {
+    font-size: 2rem;
+}
+
+.grid > div {
     grid-column: 2;
 }
 
+ul {
+    padding-left: 0;
+}
 li {
-    list-style: none;
+    font-family: var(--font-paragraph);
+}
+
+.readings li:not(:first-child) {
+    margin-top: 1rem;
 }
 
 .work img {
@@ -65,6 +80,7 @@ li {
 
 .work ul {
     display: grid;
+    list-style: none;
     grid-template-columns: repeat(3, 1fr);
     gap: 1vw;
     padding: 0;
@@ -89,7 +105,7 @@ li {
 
 
 footer {
-    text-align: center;
+    text-align: right;
     padding: 1rem 0;
     font-size: 0.9rem;
 }
