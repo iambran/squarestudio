@@ -47,7 +47,7 @@ p, li {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr minmax(50ch, 70ch) 1fr;
+    grid-template-columns: 1fr minmax(50ch, 76ch) 1fr;
     padding: 2rem 0;
 }
 
@@ -177,9 +177,12 @@ header.grid {
 footer {
     text-align: center;
     padding: 1rem 0;
-    font-size: 0.9rem;
     color: rgba(0,0,0,0.5);
     font-weight: 300;
+}
+
+footer p {
+    font-size: 1rem;
 }
 
 footer a {
