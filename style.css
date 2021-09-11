@@ -22,7 +22,7 @@ html {
 
 body {
     margin: 0;
-    font-family: var(--font-text);
+    font-family: var(--font-paragraph);
     padding: 0 1vw;
     display: grid;
     grid-template-rows: min-content repeat(auto-fill, 1fr) min-content;
@@ -47,7 +47,7 @@ p, li {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr minmax(50ch, 75ch) 1fr;
+    grid-template-columns: 1fr minmax(50ch, 70ch) 1fr;
     padding: 2rem 0;
 }
 
@@ -169,7 +169,7 @@ header.grid {
 }
 
 .skill__description {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.4;
 }
 
@@ -178,6 +178,8 @@ footer {
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
+    color: rgba(0,0,0,0.5);
+    font-weight: 300;
 }
 
 footer a {
