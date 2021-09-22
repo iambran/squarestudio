@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brandon Zhang - Industrial Web Design</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -59,16 +60,118 @@
             <p>Since I started learning web design and programming in early 2018, I always go back to all the industrial websites that impressed me most and study their site structure and user experience. All these efforts give me a unique perspective on how a professional manufacturer website should be presented, and how to build a better user experience so potential B2B customers are willing to move toward the purchase process.</p>
             <p>If you’re looking for a web designer with a background in manufacturing, don’t hesitate to get in touch with me. Apart from web design, I also provide services like product photography, graphic design, video editing.</p>
             
-            <div class="email">
+        </div>
+        
+    </section>
 
-                <h3>Get in touch.</h3>
-                <small>hello@squarestudio.cn</small>
-                
-            </div>
+    <section class="grid cards">
+        <div class="card card--email">
+
+            <h3>Get in touch.</h3>
+            <small>hello@squarestudio.cn</small>
+            
         </div>
 
-        
-        
+        <!-- <div class="card card--calculator">
+
+            <h3>What's the cost?</h3>
+            <small>Open Calculator ></small>
+            
+        </div>
+        <div class="calculator">
+            <div class="calculator__wrap">
+                <div class="calculator__filter">
+                    <div class="calculator__filter__name">
+                        Number of languages?
+                    </div>
+                    <div class="select-box">
+                        <select name="" id="select-box__language">
+                            <option value="false">Select numbers of languages</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <div class="select-box__select">
+                            <div class="select-box__select-text">Select numbers of languages</div>
+                            <div class="select-box__arrow"></div>
+                        </div>
+                        <div class="select-box__dropdown">
+                            <ul>
+                                <li class="selected">Select numbers of languages</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="calculator__filter">
+                    <div class="calculator__filter__name">
+                        Number of languages?
+                    </div>
+                    <div class="select-box">
+                        <select name="" id="select-box__language">
+                            <option value="false">Select numbers of languages</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <div class="select-box__select">
+                            <div class="select-box__select-text">Select numbers of languages</div>
+                            <div class="select-box__arrow"></div>
+                        </div>
+                        <div class="select-box__dropdown">
+                            <ul>
+                                <li class="selected">Select numbers of languages</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="calculator__filter">
+                    <div class="calculator__filter__name">
+                        Number of languages?
+                    </div>
+                    <div class="select-box">
+                        <select name="" id="select-box__language">
+                            <option value="false">Select numbers of languages</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <div class="select-box__select">
+                            <div class="select-box__select-text">Select numbers of languages</div>
+                            <div class="select-box__arrow"></div>
+                        </div>
+                        <div class="select-box__dropdown">
+                            <ul>
+                                <li class="selected">Select numbers of languages</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </section>
 
     <section class="grid readings">
@@ -93,9 +196,8 @@
         </div>
     </section>
 
-    <section class="grid skill">
-        <div>
-            <h2>My Skills (for future employer)</h2>
+    <section class="skill">
+
             <ul>
                 <li class="skill__card">
                     <img src="/tech/html.svg" alt="html logo" class="skill__logo" width="40" height="auto">
@@ -147,11 +249,12 @@
                 </li>
                 
             </ul>
-        </div>
     </section>
 
     <footer>
         <p>Source code of this site is hosted on <a href="https://github.com/">Github</a>, and big thanks to <a href="https://www.netlify.com/">Netlify</a> for their hosting service.</p>
     </footer>
+
+    <script src="calculator.js"></script>
 </body>
 </html>
